@@ -63,6 +63,9 @@ module.exports = function( grunt , undefined ) {
 
 		var customselectors = JSON.stringify( config.customselectors ) || "{}";
 
+		// if we should generate high dpi fallback png icons and which resolutions
+		var pngpixelratio = config.pngpixelratio || [1]; // example for other densities [1,1.5,2]
+
 		// folder name (within the output folder) for generated png files
 		var pngfolder = config.pngfolder || "png/";
 		// make sure pngfolder has / at the end
@@ -110,7 +113,8 @@ module.exports = function( grunt , undefined ) {
 				pngfolder,
 				cssprefix,
 				cssbasepath,
-				customselectors
+				customselectors,
+				pngpixelratio
 			],
 			fallback: ''
 		}, function(err, result, code) {

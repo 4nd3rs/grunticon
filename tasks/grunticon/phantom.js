@@ -24,6 +24,7 @@ phantom args sent from grunticon.js:
 	[9] - css classname prefix
 	[10] - css basepath prefix
 	[11] - custom CSS selectors
+	[12] - pixel ratio for the PNG's
 */
 
 (function(){
@@ -43,7 +44,8 @@ phantom args sent from grunticon.js:
 		asyncCSSpath: phantom.args[2],
 		previewFilePath: phantom.args[3],
 		previewHTMLFilePath: phantom.args[7],
-		customselectors: phantom.args[11]
+		customselectors: phantom.args[11],
+		pngpixelratio: phantom.args[12].split( "," )
 	};
 
 	var files = fs.list( options.inputdir );
