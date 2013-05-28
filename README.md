@@ -1,4 +1,6 @@
-# grunticon!
+# grunticon! - highres!
+
+Standard grunticon uses fallback PNG icons in 1x pixel ratio. This modification enables you to generate different sizes of the fallback PNG icon. The icon is not used in the webpage but it can be used in other applications that uses the assets or in a web solution that does not use SVG.. You can specify which formats you want to use in the pngpixelratio variable. (For instance [1,1.5,2]).
 
 ```
          /'
@@ -86,6 +88,7 @@ In addition to the required configuration properties above, grunticon's grunt co
 - `pngfolder`:  The name of the generated folder containing the generated PNG images. Default: `"png/"`
 - `cssprefix`: a string to prefix all css classes with. Default: `"icon-"`
 - `customselectors`: Allows you to specify custom selectors (in addition to the generated `cssprefix + filename - extension` class) for individual files. 
+- `pngpixelratio`: Specify a list of pixel ratios to output for the data png and fallback png files. Example: `[1,1.5,2]`. Default: `[1]`
 
 ## Notable forks
 

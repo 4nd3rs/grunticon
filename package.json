@@ -1,19 +1,19 @@
 {
-	"name": "grunt-grunticon",
-	"description": "A mystical CSS icon solution",
+	"name": "grunt-grunticon-highrespng",
+	"description": "A mystical CSS icon solution - with high resolution PNG support. This is a modification of the project 'grunt-grunticon' from filamentgroup.",
 	"version": "0.3.2",
-	"homepage": "https://github.com/filamentgroup/grunticon",
+	"homepage": "https://github.com/4nd3rs/grunticon",
 	"author": {
-		"name": "Scott Jehl",
-		"email": "scott@filamentgroup.com",
-		"url": "http://filamentgroup.com"
+		"name": "Anders Andersen",
+		"email": "a@andmag.se",
+		"url": "http://andmag.se"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/filamentgroup/grunticon.git"
+		"url": "https://github.com/4nd3rs/grunticon.git"
 	},
 	"bugs": {
-		"url": "https://github.com/filamentgroup/grunticon/issues"
+		"url": "https://github.com/4nd3rs/grunticon/issues"
 	},
 	"licenses": [
 		{
